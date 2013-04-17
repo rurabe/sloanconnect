@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-
+    p "code: " + params[:code].to_s
   end
 
   private
