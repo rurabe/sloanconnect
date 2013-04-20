@@ -1,2 +1,19 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<div class="row pagination-centered letterhead">
+  <h1 id="title">SloanConnect</h1>
+</div>
+
+
+<div class="row pagination-centered hazy" id="congrats">
+  <h3>Congratulations, <%= @current_user.full_name %></h3>
+  <h2>You're (Sloan) connected!</h2>
+  <p>SloanConnect members will invite you on LinkedIn, and you will invite them, automatically!</p>
+  <p> You should see invites popping up in your account over the next few days.</p>
+</div>
+
+<div class="row pagination-centered">
+  <%= link_to disconnect_path, :method => :delete, :confirm => "Are you sure?" do %>
+    <button id="disconnect">
+      I changed my mind. Disconnect me.
+    </button>
+  <% end %>
+</div>

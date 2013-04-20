@@ -1,3 +1,75 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$mit-red:  #993333;
+$mit-gray: #666666;
+$mit-gray-shadow: transparentize(#000,0.4);
+
+html{
+  background: url(dome.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  background-color: transparent;
+}
+
+
+h1,h2,h3,h4,h5,button,div,p,span {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.hazy{
+  background-color: transparentize(#fff,0.4);
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.button-shadow{
+  -moz-box-shadow:    5px 5px 5px 3px $mit-gray-shadow;
+  -webkit-box-shadow: 5px 5px 5px 3px $mit-gray-shadow;
+  box-shadow:         5px 5px 5px 3px $mit-gray-shadow;
+}
+
+#connect{
+  @extend .button-shadow;
+  font-size: 18pt;
+}
+
+#disconnect{
+  @extend .button-shadow;
+}
+
+#title{
+  color: $mit-red;
+  font-size: 72pt;
+  text-shadow: 5px 5px 5px $mit-gray-shadow;
+}
+
+#congrats{
+  margin: 20px auto 100px;
+  width: 75%;
+}
+
+
+.button-row{
+
+}
+
+.title-row{
+}
+
+.title-row #title{
+  margin-top: 150px;
+}
+
+.letterhead #title{
+  margin-top: 0px;
+}

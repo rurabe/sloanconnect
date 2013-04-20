@@ -7,8 +7,8 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'puma'
-
-gem 'linkedin'
+gem 'oauth2'
+gem 'nokogiri'
 
 
 # Gems used only for assets and not required
@@ -21,6 +21,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'font-awesome-rails'
 end
 
 gem 'jquery-rails'

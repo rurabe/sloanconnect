@@ -1,6 +1,18 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
 
-<%= link_to authorize_path, :method => :post do %>
-  <button>Connect</button>
-<% end %>
+<div class="hero-unit">
+  <div class="row pagination-centered title-row">
+    <h1 id="title" class="hazy">SloanConnect</h1>
+  </div>
+
+  <div class="row pagination-centered button-row">
+  <%= link_to authorize_path, :method => :post do %>
+    <button id="connect">
+      <i class="icon-linkedin-sign" ></i> | 
+      Connect via LinkedIn
+    </button>
+  <% end %>
+  </div>
+</div>
+
+
+
